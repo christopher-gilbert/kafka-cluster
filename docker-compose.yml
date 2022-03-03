@@ -2,7 +2,7 @@
 # brokers at localhost:{9093/9094/9095}
 # use kcat -L -b localhost:9093 to check state of cluster
 # check application logs with docker-compose logs -f {zookeeper/kafka-1/kafka-2/kafka-3}
-# kafka logs (ie topic data) is within docker volumes
+# kafka logs (ie topic data) is within docker volumes (eg on linux - sudo ls /var/lib/docker/volumes/kafka-cluster_kafka-1-data/_data)
 
 ---
 version: '2'
